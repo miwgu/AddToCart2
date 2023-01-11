@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Web shop</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="#" style="color:rgb(29, 249, 59)">Webshop</a>
+              
+              <!-- add to adjust all buttons to the right side->justify-content-end -->
+              <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+                <ul class="navbar-nav d-grid gap-2 d-md-flex ">
+                  <li class="nav-item">
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>              
+                    </form>
+                  </li>
+                  <li class="nav-item d-flex"><!--I need add d-flex atherwise it become small... -->
+
+                    <select name="" id="category" >
+                        <option value="0">All Category</option>
+                        <option value="1">Another action</option>
+                    </select>
+                  </li>
+                  <li class="nav-item ">
+                    <button id="cartBtn" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">Shopping Cart</button>
+                  </li>
+                  <li class="nav-item " >
+                    <button id="delete" class="btn btn-primary" type="button">Clear Cart</button> 
+                  </li>
+                </ul>
+<!--                 <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+              </div>
+            </div>
+          </nav>
+
+
+<!-- Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    </header>
+
+    <!--Products -->
+    <div class="container p-2">
+        <div class="row row-cols-1 row-cols-md-3 g-4 ">
+        <div class="col">
+            <div class=" card card-body" style="width: 18rem;">
+                <img src="https://picsum.photos/300/300" class="card-img-top" alt="Dummy Image">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-capitalize">Fjällraven Backpack</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div id="itemPrice" class="itemPrice" >110.0<span>SEK</span></div>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col">
+            <div class=" card card-body" style="width: 18rem;">
+                <img src="https://picsum.photos/300/300" class="card-img-top" alt="Dummy Image">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-capitalize">Fjällraven Backpack</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div id="itemPrice" class="itemPrice" >110.0<span>SEK</span></div>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col">
+              <div class=" card card-body" style="width: 18rem;">
+                <img src="https://picsum.photos/300/300" class="card-img-top" alt="Dummy Image">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-capitalize">Fjällraven Backpack</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div id="itemPrice" class="itemPrice" >110.0<span>SEK</span></div>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="col">
+              <div class=" card card-body" style="width: 18rem;">
+                <img src="https://picsum.photos/300/300" class="card-img-top" alt="Dummy Image">
+                <div class="card-body">
+                  <h5 class="card-title text-center text-capitalize">Fjällraven Backpack</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div id="itemPrice" class="itemPrice" >110.0<span>SEK</span></div>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Products -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4   gap-2">
+          <div class="card card-body" style="width: 18rem;">
+            <img src="https://picsum.photos/300/300" class="card-img-top" alt="Dummy Image">
+            <div class="card-body">
+              <h5 class="card-title text-center text-capitalize">Fjällraven Backpack</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div id="itemPrice" class="itemPrice" >110.0<span>SEK</span></div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-body " style="width: 18rem;">
+            <img src="https://picsum.photos/301/301" class="card-img-top" alt="Dummy Image">
+            <div class="card-body">
+              <h5 class="card-title text-center text-capitalize">Fjällraven Backpack</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div id="itemPrice" class="itemPrice" >110.0<span>SEK</span></div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-body col-md-4 " style="width: 18rem;">
+            <img src="https://picsum.photos/302/302" class="card-img-top" alt="Dummy Image">
+            <div class="card-body">
+              <h5 class="card-title text-center text-capitalize">Fjällraven Backpack</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div id="itemPrice" class="itemPrice" >110.0<span>SEK</span></div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-body col-md-4 " style="width: 18rem;">
+            <img src="https://picsum.photos/302/302" class="card-img-top" alt="Dummy Image">
+            <div class="card-body">
+              <h5 class="card-title text-center text-capitalize">Fjällraven Backpack</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div id="itemPrice" class="itemPrice" >110.0<span>SEK</span></div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card card-body col-md-4 " style="width: 18rem;">
+            <img src="https://picsum.photos/302/302" class="card-img-top" alt="Dummy Image">
+            <div class="card-body">
+              <h5 class="card-title text-center text-capitalize">Fjällraven Backpack</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div id="itemPrice" class="itemPrice" >110.0<span>SEK</span></div>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        
+
+            
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
